@@ -4,7 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const cors =require('cors')
-
+var methodOverride = require('method-override')
 var app = express();
 
 app.use(logger('dev'));
@@ -13,6 +13,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(cors())
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(methodOverride('_method'))
 
 const ApiRouter  = require('./routes/Api/Api')
 

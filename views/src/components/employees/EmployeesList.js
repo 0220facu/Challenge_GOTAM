@@ -46,6 +46,7 @@ class employeesList extends Component {
                 return(
                         <main className="employeesConteiner">
                                {employees.map(employee => <Employee 
+                               id= {employee.id}
                                name={employee.full_name} 
                                document={employee.identification_document} 
                                birthDate={employee.birth_date} 

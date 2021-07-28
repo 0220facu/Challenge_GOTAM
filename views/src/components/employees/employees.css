@@ -11,7 +11,23 @@
      flex-wrap: wrap;
 }
 
+.eliminar{
+    color: white;
+    border-radius: 3px;
+    background-color: #ab3535;
+    margin-bottom: 10px;
+}
 
+.edit{
+    color: white;
+    text-decoration: none;
+    padding:5px;
+    background-color: #15bd3f;
+    border-radius:5px;
+}
+.edit:visited{
+    color: white;
+ }
 
 .text{
     margin-left: 2%;
