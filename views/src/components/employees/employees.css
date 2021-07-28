@@ -1,0 +1,78 @@
+.employeesConteiner{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    height: 100vh;
+
+     /* flexbox */
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     flex-wrap: wrap;
+}
+
+
+
+.text{
+    margin-left: 2%;
+    color: #ddd;
+}
+.itemLeft{
+    width:50%;
+
+}
+.itemRight{
+    width: 50%;
+}
+
+@media(min-width:1439px){
+    .item{
+        display: flex;
+        border-radius: 5px;
+        height: 30%;
+        width:30%;
+        border: #ddd 2px solid;
+    }   
+    }
+
+@media(min-width:1023px) and (max-width:1439px){
+    .item{
+        display: flex;
+        border-radius: 5px;
+        height: 30%;
+        width:40%;
+        border: #ddd 2px solid;
+    }   
+}
+
+@media(min-width:767px) and (max-width:1023px){
+    .item{
+        margin-bottom: 10px;
+        display: flex;
+        border-radius: 5px;
+        height: 30%;
+        width:60%;
+        border: #ddd 2px solid;
+    }   
+}
+@media(min-width:375px) and (max-width:767px){
+    .item{
+        margin-bottom: 10px;
+        display: flex;
+        border-radius: 5px;
+        height: 35%;
+        width:100%;
+        border: #ddd 2px solid;
+    }   
+}
+
+@media(min-width:320px) and (max-width:375px){
+    .item{
+        margin-bottom: 10px;
+        display: flex;
+        border-radius: 5px;
+        height: 45%;
+        width:100%;
+        border: #ddd 2px solid;
+    }   
+}
