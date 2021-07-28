@@ -22,9 +22,6 @@ function App() {
         <Route exact path="/crear">
           <EmployeeForm url="http://localhost:3000/api/employees" />
         </Route>
-        <Route exact path="/editar/:id">
-          <EmployeeForm url="http://localhost:3000/api/edit/:id" />
-        </Route>
       </Switch>
     </div>
   </Router>

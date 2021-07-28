@@ -29,15 +29,18 @@ class createForm extends Component{
         this.setState({
                areas: data.Areas
         })
-        console.log(this.state.areas)
+
 }
 
     render() {
-
+        console.log(this.context)
         let areas;
 
         areas = this.state.areas
-
+        
+        let url;
+       // url = this.props.params.id? this.props.url + this.props.params : this.props.url
+        
         return(
             <div className="FormContainer">
                 <form action={this.props.url}method="POST">

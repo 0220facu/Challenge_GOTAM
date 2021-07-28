@@ -17,7 +17,6 @@ class employee extends Component{
                 <form action={"http://localhost:3000/api/employees/"+ this.props.id} method="post" >
                     <button type="submit"  className="eliminar">ELIMINAR</button>
                 </form>
-                <Link className="edit" to={"/editar"}>Editar</Link>
             </section>
         </article>
     );
